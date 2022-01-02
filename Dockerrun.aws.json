@@ -1,5 +1,4 @@
 {
-    "AWSEBDockerrunVersion": "3",
     "containerDefinitions": [
         {
             "command": [
@@ -14,13 +13,13 @@
                 }
             ],
             "name": "backend",
-            "memory": 128,
             "portMappings": [
                 {
                     "containerPort": 8080,
-                    "hostPort": 8080
+                    "hostPort": 80
                 }
-            ]
+            ],
+            "privileged": true
         }
     ],
     "family": "",
