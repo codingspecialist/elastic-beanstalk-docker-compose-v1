@@ -1,4 +1,5 @@
 {
+    "AWSEBDockerrunVersion": "3",
     "containerDefinitions": [
         {
             "command": [
@@ -6,6 +7,7 @@
             ],
             "essential": true,
             "image": "openjdk:11",
+            "memory": 2048,
             "mountPoints": [
                 {
                     "containerPath": "/tmp",
