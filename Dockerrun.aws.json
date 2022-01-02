@@ -1,0 +1,35 @@
+{
+    "AWSEBDockerrunVersion": "3",
+    "containerDefinitions": [
+        {
+            "command": [
+                "./start.sh"
+            ],
+            "essential": true,
+            "image": "openjdk:11",
+            "mountPoints": [
+                {
+                    "containerPath": "/tmp",
+                    "sourceVolume": "_BuildLibs"
+                }
+            ],
+            "name": "backend",
+            "memory": 128,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080
+                }
+            ]
+        }
+    ],
+    "family": "",
+    "volumes": [
+        {
+            "host": {
+                "sourcePath": "./build/libs"
+            },
+            "name": "_BuildLibs"
+        }
+    ]
+}
