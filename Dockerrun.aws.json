@@ -1,9 +1,10 @@
 {
-    "AWSEBDockerrunVersion": "3",
     "containerDefinitions": [
         {
             "command": [
-                "./start.sh"
+                "java",
+                "-jar",
+                "blog-action-aws-0.0.1-SNAPSHOT.jar"
             ],
             "essential": true,
             "image": "openjdk:11",
