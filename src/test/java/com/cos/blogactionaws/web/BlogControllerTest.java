@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.ResponseEntity;
 
+// 13.209.10.234
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class BlogControllerTest {
 	@Autowired
